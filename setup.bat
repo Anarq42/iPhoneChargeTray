@@ -48,7 +48,7 @@ if errorlevel 1 goto :failed
 
 echo.
 echo Verifying the key packages...
-".venv\Scripts\python.exe" -c "import pymobiledevice3, lzss, pystray, PIL; print('All key packages imported successfully.')"
+".venv\Scripts\python.exe" -c "import pymobiledevice3, lzss, pystray, PIL; from PIL import ImageTk, ImageFilter; print('All key packages imported successfully.')"
 if errorlevel 1 goto :failed
 
 echo.
